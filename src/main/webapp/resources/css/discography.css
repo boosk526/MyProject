@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0; text-decoration: none; font-family: 'Ubuntu', sans-serif, 'Noto Sans', sans-serif; list-style: none;}
+
+#container{
+   width: 100%;
+   height:170vh;
+   background: #cbd9ef;
+}
+.discography-name{
+	height: 40vh;
+	width: 100%;
+	text-align: center;
+	line-height: 60vh;
+}
+.discography-album{
+	height: 100vh;
+	width: 80%;
+	margin: 0 auto;
+	background-color: yellow;
+}
+.discography-name > b{
+	font-size: 70px;
+	letter-spacing: 2px;
+	font-family: 'Oswald', sans-serif;
+}

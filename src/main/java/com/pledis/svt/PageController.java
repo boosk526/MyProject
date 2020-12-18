@@ -9,7 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
 	
 	@GetMapping("profile")
-	public void getMemberLogin()throws Exception{
+	public void getProfile()throws Exception{
+		
+	}
+	
+	@GetMapping("discography")
+	public void getDiscography()throws Exception{
 		
 	}
 
