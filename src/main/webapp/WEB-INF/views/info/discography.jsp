@@ -18,7 +18,10 @@
       		<b>DISCOGRAPHY</b>
       	</div>
       	<div class="discography-album">
-      		<img alt="" src="${pageContext.request.contextPath}/resources/images/album2.png" width="350px">
+      		<img class="dis-album min-bor" alt="" src="${pageContext.request.contextPath}/resources/images/album3.png" width="330px">
+      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album4.png" width="330px">
+      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album5.png" width="330px">
+      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album2.png" width="330px">
       	</div>
 		<c:import url="../template/menu.jsp"></c:import>  
    

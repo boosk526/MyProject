@@ -8,12 +8,14 @@
 <head>
 <title>index</title>
 <meta charset="utf-8">
+</head>
 <body>
+
 	<c:import url="./template/header.jsp"></c:import>
    
 	<section id="container">
         <div class="album">
-         	<img class="album-img" alt="" style="width=100%;height=100%;object-fit:scale-down;"  src="${pageContext.request.contextPath}/resources/images/album2.png">
+         	<div><img class="album-img" alt="" style="object-fit:scale-down;"  src="${pageContext.request.contextPath}/resources/images/album2.png"></div>
       	</div>
       	
 		<c:import url="./template/menu.jsp"></c:import>  
@@ -23,6 +25,7 @@
 	<c:import url="./template/footer.jsp"></c:import>
 
 	<script src="./resources/js/common.js"> </script>
+	
 
 </body>
 </html>

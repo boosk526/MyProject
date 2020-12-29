@@ -3,7 +3,7 @@
 
 #header{
    width: 100%;
-   height: 60px;
+   height: 8vh;
    position: absolute;
    background-color: rgba(25,25,25,0.2);
 }
@@ -11,7 +11,6 @@
    width: 5%;
    height: 60px;
    float: left;
-   z-index: 1;
    position: absolute;
 }
 .menu-bar, .menu-bar span{
@@ -23,6 +22,7 @@
    position: relative;
    width: 100%;
    height: 60px;
+   z-index: 1;
 }
 .menu-bar > span{
    position: absolute;
@@ -59,10 +59,10 @@
    width: 100%;
    height: 60px;
    text-align: center;
-   line-height: 60px;
+   line-height: 8vh;
    position: absolute;
 }
-.svt-logo{
+.logo-home{
    font-size: 30px;
    color: white;
 }
@@ -70,7 +70,7 @@
    width: 5%;
    height: 60px;
    position: absolute;
-   line-height: 60px;
+   line-height: 8vh;
    margin: 0 0 0 95%;
 }
 .sel-lang{
@@ -81,7 +81,7 @@
 }
 #container{
    width: 100%;
-   height:90.7vh;
+   height:91.8vh;
    background: linear-gradient(45deg, #69baf0 45%, #ffcf00 45% 55%);
 }
 .album{
@@ -95,7 +95,7 @@
 }
 .header-menu-all{
    width: 100%;
-   height: 92vh;
+   height: 100vh;
    position: absolute;
    top: 0;
    background: linear-gradient(to right, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.8) 50% 50%);
@@ -147,7 +147,51 @@
 }
 #footer{
    width: 100%;
-   height: 66px;
+   height: 8vh;
    position: absolute;
-    background-color: black;
+   background-color: #303030;
+}
+.footer-family{
+	width: 20%;
+  	height: 45px;
+	display: inline-block;
+	margin: 0 0 0 40%;	
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+.family-sites{
+	color: gray;
+	font-size: 12px;
+	line-height: 8vh;
+	letter-spacing: 1px;
+}
+.footer-family-hover{
+	position: absolute;
+	width: 20%;
+  	height: 128px;
+  	top: 0;
+  	margin: 74vh 0 0 40%;
+  	background-color: #202020;
+  	text-align: center;
+}
+.footer-family-li{
+	padding: 1vh 0 1vh 0;
+	font-size: 12px;
+	border-bottom: 1px solid #2f2f2f;
+}
+.footer-family-li > b > a{
+	color: gray;
+}
+.footer-family-li:hover{
+	background-color: black;
+}
+.footer-family-li:hover > b > a{
+	color: white;
+}
+.footer-r{
+	float: right;
+	color: gray;
+	font-size: 10px;
+	padding: 0 2% 0 0;
+	line-height: 8vh;
 }

@@ -16,10 +16,24 @@
 	height: 100vh;
 	width: 80%;
 	margin: 0 auto;
-	background-color: yellow;
 }
 .discography-name > b{
 	font-size: 70px;
 	letter-spacing: 2px;
 	font-family: 'Oswald', sans-serif;
+}
+.dis-album{
+	margin: 0 0 2vh 4%;
+}
+.min-bor{
+	border: 1px solid #BDBDBD;
+}
+.footer-family-hover{
+	position: absolute;
+	width: 20%;
+  	height: 128px;
+  	top: 0;
+  	margin: 154vh 0 0 40%;
+  	background-color: #202020;
+  	text-align: center;
 }
