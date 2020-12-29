@@ -39,11 +39,11 @@
 		      		<img class="mem-th" alt="" width="350px" src="${pageContext.request.contextPath}/resources/images/member-th.jpg">
 		      		<img class="mem-hk" alt="" width="350px" src="${pageContext.request.contextPath}/resources/images/member-hk.jpg">
 	      	</div>
-	      		<div class="member-info">
-	      			<div class="member-info-sb"> 
-	      				<img class="img-sb" alt="" src="${pageContext.request.contextPath}/resources/images/member-sb.jpg">
-	      				<dl class="info-sb">
-	      					<dt class="mem-info name-sb"><h1>수빈</h1></dt>
+	      		<div class="member-all member-info-sb">
+	      			<div class="member-info"> 
+	      				<img class="img-all img-sb" alt="" src="${pageContext.request.contextPath}/resources/images/member-sb.jpg">
+	      				<dl class="info-all info-sb">
+	      					<dt class="mem-info name-all name-sb"><h1>수빈</h1></dt>
 	      					<dd class="mem-info">
 	      						<ul>
 	      							<li><b>생일: 2000년 12월 5일</b></li>
@@ -52,10 +52,83 @@
 	      						</ul>
 	      					</dd>
 	      				</dl>
-	      				<div class="info-back">
+	      				<div class="info-back info-back-sb">
 	      				</div>
 	      			</div>
 	      		</div>
+	      			
+	      		<div class="member-all member-info-yj">
+	      			<div class="member-info"> 
+	      				<img class="img-all img-yj" alt="" src="${pageContext.request.contextPath}/resources/images/member-yj.jpg">
+	      				<dl class="info-all info-yj">
+	      					<dt class="mem-info name-all name-yj"><h1>연준</h1></dt>
+	      					<dd class="mem-info">
+	      						<ul>
+	      							<li><b>생일: 1999년 9월 13일</b></li>
+	      							<li><b>키: 181.5cm</b></li>
+	      							<li><b>몸무게: 62kg​</b></li>
+	      						</ul>
+	      					</dd>
+	      				</dl>
+	      				<div class="info-back info-back-yj">
+	      				</div>
+	      			</div>
+	      		</div>
+	      			
+	      		<div class="member-all member-info-bg">
+	      			<div class="member-info"> 
+	      				<img class="img-all img-bg" alt="" src="${pageContext.request.contextPath}/resources/images/member-bg.jpg">
+	      				<dl class="info-all info-bg">
+	      					<dt class="mem-info name-all name-bg"><h1>범규</h1></dt>
+	      					<dd class="mem-info">
+	      						<ul>
+	      							<li><b>생일: 2001년 3월 13일</b></li>
+	      							<li><b>키: 180cm</b></li>
+	      							<li><b>몸무게: 53kg​</b></li>
+	      						</ul>
+	      					</dd>
+	      				</dl>
+	      				<div class="info-back info-back-bg">
+	      				</div>
+	      			</div>
+	      		</div>
+	      			
+	      		<div class="member-all member-info-th">
+	      			<div class="member-info"> 
+	      				<img class="img-all img-th" alt="" src="${pageContext.request.contextPath}/resources/images/member-th.jpg">
+	      				<dl class="info-all info-th">
+	      					<dt class="mem-info name-all name-th"><h1>태현</h1></dt>
+	      					<dd class="mem-info">
+	      						<ul>
+	      							<li><b>생일: 2002년 2월 5일</b></li>
+	      							<li><b>키: 177cm</b></li>
+	      							<li><b>몸무게: 55kg​</b></li>
+	      						</ul>
+	      					</dd>
+	      				</dl>
+	      				<div class="info-back info-back-th">
+	      				</div>
+	      			</div>
+	      		</div>
+	      			
+	      		<div class="member-all member-info-hk"> 
+	      			<div class="member-info">
+	      				<img class="img-all img-hk" alt="" src="${pageContext.request.contextPath}/resources/images/member-hk.jpg">
+	      				<dl class="info-all info-hk">
+	      					<dt class="mem-info name-all name-hk"><h1>휴닝카이</h1></dt>
+	      					<dd class="mem-info">
+	      						<ul>
+	      							<li><b>생일: 2002년 8월 14일</b></li>
+	      							<li><b>키: 183cm</b></li>
+	      							<li><b>몸무게: 67kg​</b></li>
+	      						</ul>
+	      					</dd>
+	      				</dl>
+	      				<div class="info-back info-back-hk">
+	      				</div>
+	      			</div>
+	      		</div>
+	      		
 		</div>
 		
 		<c:import url="../template/menu.jsp"></c:import>  

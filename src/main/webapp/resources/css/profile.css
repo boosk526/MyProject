@@ -53,28 +53,35 @@
 .mem-hk{
 	margin: 0 0 0 348px;
 }
-.member-info{
+.member-all{
 	width: 100%;
 	height: 99.7vh;
-	background-color: rgba(25,25,25,0.7);
+	background-color: rgba(25,25,25,0.9);
 	position: absolute;
 	top: 0;
 	margin: 135vh 0 0 0;
 }
-.img-sb{
+.member-info-yj, .member-info-bg{
+	margin: 160vh 0 0 0;
+}
+.member-info-th, .member-info-hk{
+	margin: 185vh 0 0 0;
+}
+.img-all{
 	float: left;
 }
-.info-sb{
-	width: 80%;
+.info-all{
+	width: 20%;
 	height: 60vh;
-	padding: 39vh 0 0 20%;
+	float: left;
+	padding: 40vh 0 0 0;
 }
 .mem-info{
 	padding: 0 0 0 40%;
 	color: white;
 	font-size: 14px;
 }
-.name-sb{
+.name-all{
 	font-size: 18px;
 	padding: 0 0 4vh 40%;
 }
@@ -84,12 +91,13 @@
 .info-back {
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-right: 40px solid white;
-    border-bottom: 20px solid transparent;
+    border-top: 15px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 15px solid transparent;
+    float: right;
+    margin: 5vh 2% 0 0;
+    cursor: pointer;
 }
-
-
 .footer-family-hover{
 	position: absolute;
 	width: 20%;
