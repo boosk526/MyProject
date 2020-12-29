@@ -13,6 +13,13 @@
 	<c:import url="../template/header.jsp"></c:import>
    
 	<section id="container">
+	
+      	<nav class="scroll-up">
+	      	<div class="scroll-div">
+	      		up
+	      	</div>
+      	</nav>
+	
       	<div class="profile-main">
       		<img class="profile-img" alt="" src="${pageContext.request.contextPath}/resources/images/profile.jpg">
       	

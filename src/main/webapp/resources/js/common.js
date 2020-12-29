@@ -18,7 +18,6 @@
 		$('.footer-family-hover').toggle();
 	});
    
-   
    	$('.member-info-sb').hide();
 	$('.mem-sb').click(function(){
 		$(this).toggleClass('active');
@@ -58,4 +57,18 @@
 	$('.mem-hk, .info-back-hk').click(function(){
         $('.member-info-hk').toggle();
 	});
+	
+	
+	$('.scroll-up').click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 200);
+		return false;
+	});
+	
+	
+	$('.slider').bxSlider({ 
+	 	speed: 500, 
+	 	pager:true, 
+ 	});
    

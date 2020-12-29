@@ -18,6 +18,5 @@
          <p class="sel-lang"><b>KOR</b></p>
       </div>
    </header>
-   
 
    
