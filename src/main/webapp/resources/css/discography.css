@@ -4,7 +4,7 @@
 #container{
    width: 100%;
    height:170vh;
-   background: #cbd9ef;
+   background: rgb(218, 228, 243);
 }
 .discography-name{
 	height: 40vh;
@@ -22,11 +22,63 @@
 	letter-spacing: 2px;
 	font-family: 'Oswald', sans-serif;
 }
-.dis-album{
-	margin: 0 0 2vh 4%;
+.album-container{
+	height: 330px;
+	width: 330px;
+	float: left;
 }
-.min-bor{
-	border: 1px solid #BDBDBD;
+.album-all{
+	margin: 0 0 3vh 5%;
+}
+.caption-style{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.caption-style li{
+	float: left;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+.caption-style li:hover .caption{
+	opacity: 1;
+}
+.caption-style img{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.caption-style .caption{
+	cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition:all 0.45s ease-in-out;
+	-moz-transition:all 0.45s ease-in-out;
+	-o-transition:all 0.45s ease-in-out;
+	-ms-transition:all 0.45s ease-in-out;
+	transition:all 0.45s ease-in-out;
+}
+.caption-style .blur{
+	background-color: rgba(0,0,0,0.65);
+	height: 350px;
+	width: 350px;
+	z-index: 1;
+	position: absolute;
+}
+.caption-style .caption-text h1{
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.caption-style .caption-text{
+	z-index: 10;
+	color: #fff;
+	position: absolute;
+	width: 330px;
+	height: 350px;
+	text-align: center;
+	top: 130px;
+	line-height: 30px;
 }
 .footer-family-hover{
 	position: absolute;

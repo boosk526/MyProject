@@ -18,10 +18,53 @@
       		<b>DISCOGRAPHY</b>
       	</div>
       	<div class="discography-album">
-      		<img class="dis-album min-bor" alt="" src="${pageContext.request.contextPath}/resources/images/album3.png" width="330px">
-      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album4.png" width="330px">
-      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album5.png" width="330px">
-      		<img class="dis-album" alt="" src="${pageContext.request.contextPath}/resources/images/album2.png" width="330px">
+      		<ul class="caption-style">
+			<li class="album-all min-bor">
+				<img src="${pageContext.request.contextPath}/resources/images/album3.png" alt="" width="330px">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						3RD MINI ALBUM<br>
+      					<h3>MINISODE1 : BLUE HOUR</h3>
+					</div>
+				</div>
+			</li>
+			<li class="album-all">
+				<img src="${pageContext.request.contextPath}/resources/images/album4.png" alt="" width="330px">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						2RD MINI ALBUM<br>
+      					<h3>꿈의 장 : ETERNITY</h3>
+					</div>
+				</div>
+			</li>
+			<li class="album-all">
+				<img src="${pageContext.request.contextPath}/resources/images/album5.png" alt="" width="330px">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						1ST FULL-LENGTH ALBUM<br>
+      					<h3>꿈의 장 : MAGIC</h3>
+					</div>
+				</div>
+			</li>
+			<li class="album-all">
+				<img src="${pageContext.request.contextPath}/resources/images/album2.png" alt="" width="330px">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						1ST MINI ALBUM<br>
+      					<h3>꿈의 장 : STAR</h3>
+					</div>
+				</div>
+			</li>
+		</ul>
+      	
+      	
+      	
+      	
+   
       	</div>
 		<c:import url="../template/menu.jsp"></c:import>  
    

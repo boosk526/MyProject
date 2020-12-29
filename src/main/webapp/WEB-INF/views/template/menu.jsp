@@ -10,7 +10,7 @@
          </ul>
          <div class="header-submenu-all">
             <ul class="submenu-ul">
-               <li class="submenu-li"><h3><a href="#">HOME</a></h3></li>
+               <li class="submenu-li"><h3><a href="${pageContext.request.contextPath}/">HOME</a></h3></li>
                <li class="submenu-li"><h3><a href="${pageContext.request.contextPath}/info/profile">PROFILE</a></h3></li>
                <li class="submenu-li"><h3><a href="${pageContext.request.contextPath}/info/discography">DISCOGRAPY</a></h3></li>
                <li class="submenu-li"><h3><a href="#">INTRODUCTION</a></h3></li>
