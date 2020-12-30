@@ -17,5 +17,10 @@ public class PageController {
 	public void getDiscography()throws Exception{
 		
 	}
+	
+	@GetMapping("discographyInfo")
+	public void getDiscographyInfo()throws Exception{
+		
+	}
 
 }
