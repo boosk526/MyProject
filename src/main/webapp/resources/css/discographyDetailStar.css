@@ -3,12 +3,21 @@
 
 #container{
 	width: 100%;
-	height:615vh;
-	background: #cad9ee;
+	height:460vh;
+	background: linear-gradient(45deg, #78c8ff 70%, #ffcf00 30% 75%);
 }
 .disc-album{
 	width: 100%;
 	height:120vh;
+}
+.dis-album-back{
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    margin: 11vh 0 0 8%;
 }
 .disc-album-img{
 	box-shadow: 2px 2px 7px #696969;
@@ -17,7 +26,7 @@
 }
 .disc-album-tt{
 	width: 35%;
-	height:27vh;
+	height: 20vh;
 	margin: 11vh 12% 0 0;
 	float: right;
 }
@@ -29,12 +38,13 @@
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	letter-spacing: 1px;
-	color: #808df9;
+	color: white;
 }
 .disc-album-sode1 > h1{
 	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	letter-spacing: 2px;
+	font-size: 45px;
+	letter-spacing: 4px;
+	color: white;
 }
 .disc-album-con{
 	width: 35%;
@@ -47,7 +57,7 @@
 .disc-mv{
 	width: 100%;
 	height: 100vh;
-	background: #d0ccd8;
+	background-color: rgba(0,0,0,0.1);
 }
 .mv-iframe{
 	width: 1100px;
@@ -57,7 +67,7 @@
 }
 .disc-mv-tt > h1{
 	font-family: 'Oswald', sans-serif;
-	color: #fd6f28;
+	color: white;
 	font-size: 60px;
 	letter-spacing: 2px;
 	position: absolute;
@@ -81,47 +91,29 @@
 	margin: 0 8% 0 8%;
 }
 .disc-mv-vd-tt > span > b > a{
-	color: #45484c;
+	color: #c9dceb;
 	font-size: 17px;
 }
 .disc-mv-vd-tt > span > b > a:hover{
-	color: #fd6f28;
-}
-.disc-art{
-	width: 100%;
-	height: 120vh;
-	background: #c9d3f7;
-	margin: 30vh 0 0 0;
-}
-.disc-art-tt > h1{
-	font-family: 'Oswald', sans-serif;
-	color: #807bfc;
-	font-size: 60px;
-	letter-spacing: 2px;
-	position: absolute;
-	top: 0;
-	margin: 241vh 0 0 42%;
-}
-.disc-art-pt > img{
-	margin: 9vh 0 0 33%;
+	color: #f9e709;
 }
 .disc-pt{
 	width: 100%;
-	height: 120vh;
-	background: #ded2eb;	
+	height: 103.7vh;
 	margin: 30vh 0 0 0;
+	background-color: rgba(0,0,0,0.1);
 }
 .disc-pt-tt > h1{
 	font-family: 'Oswald', sans-serif;
-	color: #fd7fb8;
+	color: white;
 	font-size: 60px;
 	letter-spacing: 2px;
 	position: absolute;
 	top: 0;
-	margin: 391vh 0 0 45%;
+	margin: 241vh 0 0 45%;
 }
 .disc-pt-pt > img{
-	margin: 9vh 0 0 33%;
+	margin: 0 0 0 15%;
 }
 .disc-track-tt{
 	width: 100%;
@@ -131,7 +123,7 @@
 }
 .disc-track-tt > h1{
 	font-family: 'Oswald', sans-serif;
-	color: #2e7dca;
+	color: white;
 	font-size: 60px;
 	letter-spacing: 2px;
 }
@@ -146,13 +138,13 @@
 }
 .disc-track-1{
 	margin: 0 12% 0 0;
-	color: #2e7dca;
+	color: #ffea00;
 }
 .disc-track-2{
-	color: #5b6678;
+	color: #315167;
 }
 .disc-track-3{
-	color: #a6b2c3;
+	color: #3a85b6;
 }
 .disc-track-m{
 	margin: 2vh 0 0 0;
@@ -162,7 +154,7 @@
 	width: 20%;
   	height: 128px;
   	top: 0;
-  	margin: 154vh 0 0 40%;
+  	margin: 443vh 0 0 40%;
   	background-color: #202020;
   	text-align: center;
 }

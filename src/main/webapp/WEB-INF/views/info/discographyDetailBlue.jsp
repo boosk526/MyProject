@@ -5,9 +5,9 @@
 <html>
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
-<link href="../resources/css/discographyInfo.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/discographyDetailBlue.css" rel="stylesheet" type="text/css">
 <head>
-<title>profile</title>
+<title>Blue</title>
 <meta charset="utf-8">
 <body>
 	<c:import url="../template/header.jsp"></c:import>
@@ -20,6 +20,13 @@
 		</nav>
 		
 		<div class="disc-album">
+			<a href="${pageContext.request.contextPath}/info/discography"><div class="dis-album-back"></div></a>
+			<div class="disc-shape shape1"></div>
+			<div class="disc-shape shape2"></div>
+			<div class="disc-shape shape3"></div>
+			<div class="disc-shape shape4"></div>
+			<div class="disc-shape shape5"></div>
+			
 			<img class="disc-album-img" src="${pageContext.request.contextPath}/resources/images/album3.png">
 			<div class="disc-album-tt">
 				<div class="disc-album-3rd"><h3>3RD MINI ALBUM</h3></div>

@@ -18,9 +18,25 @@ public class PageController {
 		
 	}
 	
-	@GetMapping("discographyInfo")
-	public void getDiscographyInfo()throws Exception{
+	@GetMapping("discographyDetailBlue")
+	public void getDiscographyDetailBlue()throws Exception{
 		
 	}
+	
+	@GetMapping("discographyDetailEternity")
+	public void getDiscographyDetailEternity()throws Exception{
+		
+	}
+	
+	@GetMapping("discographyDetailMagic")
+	public void getDiscographyDetailMagic()throws Exception{
+		
+	}
+	
+	@GetMapping("discographyDetailStar")
+	public void getDiscographyDetailStar()throws Exception{
+		
+	}
+	
 
 }
