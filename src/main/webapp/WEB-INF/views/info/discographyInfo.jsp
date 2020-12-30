@@ -53,10 +53,59 @@
 			</div>
 		</div>
 		<div class="disc-art">
+			<div class="disc-art-tt">
+				<h1>PIXEL ART</h1>
+			</div>
+			<div class="disc-art-pt">
+				<img alt="" src="${pageContext.request.contextPath}/resources/images/sode1.gif" width="500px" height="800px">
+			</div>
 		</div>
-		<div class="disc-phto">
+		<div class="disc-pt">
+			<div class="disc-pt-tt">
+				<h1>PHOTO</h1>
+			</div>
+			<div class="disc-pt-pt">
+				<img alt="" src="${pageContext.request.contextPath}/resources/images/sode1-pt.jpg" width="500px" height="800px">
+			</div>
 		</div>
 		<div class="disc-track">
+			<div class="disc-track-tt">
+				<h1>TRACK</h1>
+			</div>
+			<div class="disc-track-num">
+				<div class="disc-track-tn">
+					<div class="disc-track-m">
+						<b><span class="disc-track-1">1</span>
+						<span class="disc-track-2">Ghosting&nbsp;&nbsp;</span>
+						<span class="disc-track-3">3’43”</span>
+						</b>
+					</div>
+					<div class="disc-track-m">
+						<b><span class="disc-track-1">2</span>
+						<span class="disc-track-2">5시 53분의 하늘에서 발견한 너와 나&nbsp;&nbsp;</span>
+						<span class="disc-track-3">3’29”</span>
+						</b>
+					</div>
+					<div class="disc-track-m">
+						<b><span class="disc-track-1">3</span>
+						<span class="disc-track-2">날씨를 잃어버렸어&nbsp;&nbsp;</span>
+						<span class="disc-track-3">3’30”</span>
+						</b>
+					</div>
+					<div class="disc-track-m">
+						<b><span class="disc-track-1">4</span>
+						<span class="disc-track-2">Wishlist&nbsp;&nbsp;</span>
+						<span class="disc-track-3">3’11”</span>
+						</b>
+					</div>
+					<div class="disc-track-m">
+						<b><span class="disc-track-1">5</span>
+						<span class="disc-track-2">하굣길&nbsp;&nbsp;</span>
+						<span class="disc-track-3">3’02”</span>
+						</b>
+					</div>
+				</div>
+			</div>
 		</div>
       
 		<c:import url="../template/menu.jsp"></c:import>  

@@ -3,7 +3,7 @@
 
 #container{
 	width: 100%;
-	height:500vh;
+	height:615vh;
 	background: #cad9ee;
 }
 .disc-album{
@@ -89,13 +89,73 @@
 }
 .disc-art{
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 	background: #c9d3f7;
+	margin: 30vh 0 0 0;
 }
-.disc-phto{
+.disc-art-tt > h1{
+	font-family: 'Oswald', sans-serif;
+	color: #807bfc;
+	font-size: 60px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 0;
+	margin: 241vh 0 0 42%;
+}
+.disc-art-pt > img{
+	margin: 9vh 0 0 33%;
+}
+.disc-pt{
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 	background: #ded2eb;	
+	margin: 30vh 0 0 0;
+}
+.disc-pt-tt > h1{
+	font-family: 'Oswald', sans-serif;
+	color: #fd7fb8;
+	font-size: 60px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 0;
+	margin: 391vh 0 0 45%;
+}
+.disc-pt-pt > img{
+	margin: 9vh 0 0 33%;
+}
+.disc-track-tt{
+	width: 100%;
+	height: 20vh;
+	margin: 15vh 0 0 0;
+	text-align: center;
+}
+.disc-track-tt > h1{
+	font-family: 'Oswald', sans-serif;
+	color: #2e7dca;
+	font-size: 60px;
+	letter-spacing: 2px;
+}
+.disc-track-num{
+	width: 100%;
+	height: 30vh;
+}
+.disc-track-tn{
+	width: 25%;
+	height: 50vh;
+	margin: 0 auto;
+}
+.disc-track-1{
+	margin: 0 12% 0 0;
+	color: #2e7dca;
+}
+.disc-track-2{
+	color: #5b6678;
+}
+.disc-track-3{
+	color: #a6b2c3;
+}
+.disc-track-m{
+	margin: 2vh 0 0 0;
 }
 .footer-family-hover{
 	position: absolute;
