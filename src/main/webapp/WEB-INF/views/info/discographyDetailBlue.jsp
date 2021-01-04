@@ -5,7 +5,7 @@
 <html>
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
-<link href="../resources/css/discographyDetailBlue.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/info/discographyDetailBlue.css" rel="stylesheet" type="text/css">
 <head>
 <title>Blue</title>
 <meta charset="utf-8">

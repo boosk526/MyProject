@@ -13,6 +13,12 @@
 		</div>
     
 	<footer id="footer">
+		<div class="footer-logo">
+			<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/twitter-logo.png"></a>
+			<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/insta-logo.png"></a>
+			<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/fb-logo.png"></a>
+			<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/yt-logo.png"></a>
+		</div>
 		<div class="footer-family">
 			<b class="family-sites">FAMILY SITES</b>
 		</div>

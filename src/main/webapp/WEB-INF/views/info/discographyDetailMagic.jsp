@@ -5,7 +5,7 @@
 <html>
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
-<link href="../resources/css/discographyDetailMagic.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/info/discographyDetailMagic.css" rel="stylesheet" type="text/css">
 <head>
 <title>profile</title>
 <meta charset="utf-8">
