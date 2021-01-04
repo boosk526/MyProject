@@ -6,55 +6,50 @@
 <html>
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
-<link href="../resources/css/discography.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/board/boardWrite.css" rel="stylesheet" type="text/css">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- include summernote css/js -->
 	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
-<style type="text/css">
-.error{
-	color: red;
-}
-</style>
 </head>
 <body>
 	<c:import url="../template/header.jsp"></c:import>
 
-	<section class="container">
-		<h3>${board}Write V1</h3>
-		<p>The .navbar-right class is used to right-align navigation bar buttons.</p>
-		<form:form modelAttribute="boardVO" action="./${board}Write" enctype="multipart/form-data">
-			<div class="form-group">
-				<label for="title">Title:</label>
-				<!-- path: parameter Name -->
-		   		<form:input path="title" class="form-control"/>
-		   		<form:errors path="title" cssClass="error"></form:errors>
-		    </div>
-		    
-		     <div class="form-group">
-			 	<label for="writer">Writer:</label>
-			 	<form:input path="writer" class="form-control" value="${member.id}"/>
-			 	<form:errors path="writer" cssClass="error"></form:errors>
-		    </div>
-		    
-	  		<div class="form-group">
-		    	<label for="contents">Contents:</label>
-			 	<form:input path="contents" id="contents"/>
-		    </div>
-		    
-		    <div class="form-group">
-				<label for="files">File:</label>
-				<input type="file" class="form-control" name="files">
-				<input type="file" class="form-control" name="files">
-		    </div>
-
-		    
-		    <button type="submit" class="btn btn-default">Write</button>
-		</form:form>
-	</div>
-
+	<section id="container">
+		<div class="write-form">
+			<form:form modelAttribute="boardVO" action="./${board}Write" enctype="multipart/form-data">
+				<div class="form-write">
+					<div class="form-group">
+						<label for="title">Title</label>
+						<!-- path: parameter Name -->
+				   		<form:input path="title" class="form-tw"/>
+				   		<form:errors path="title" cssClass="error"></form:errors>
+				    </div>
+				    
+				     <div>
+					 	<label for="writer">Writer</label>
+					 	<form:input path="writer" class="form-tw form-ww" value="${member.id}" readonly="${member.id}"/>
+					 	<form:errors path="writer" cssClass="error"></form:errors>
+				    </div>
+				    
+			  		<div>
+					 	<div class="write-contents"></div>
+				    </div>
+				    
+				    <div class="write-file">
+						<label for="files">File</label>
+						<input type="file" class="file-control" name="files">
+						<input type="file" class="file-control" name="files">
+				    </div>
+		
+				</div>
+				<div class="submit-btn">
+					<button type="submit" class="btn-submit">Write</button>
+				</div>
+			</form:form>
+		</div>
 
 		<c:import url="../template/menu.jsp"></c:import>  
    
@@ -66,11 +61,9 @@
 	
 <script type="text/javascript">
 
-	$('#contents').summernote({
-	    height: 300
+	$('.write-contents').summernote({
+	    height: 350
 	});
-
-	
 	
 </script>
 

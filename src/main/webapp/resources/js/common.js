@@ -71,4 +71,8 @@
 	 	speed: 500, 
 	 	pager:true, 
  	});
+ 	
+ 	$("#write-btn").click(function() {
+		location.href="./${board}Write";
+	});
    

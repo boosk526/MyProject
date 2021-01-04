@@ -1,10 +1,14 @@
 package com.pledis.svt.util;
 
+import org.springframework.data.domain.Page;
+
+import com.pledis.svt.board.notice.NoticeVO;
+
 import lombok.Data;
 
 @Data
 public class Pager {
-	
+
 	private String kind;
 	private String search;
 	

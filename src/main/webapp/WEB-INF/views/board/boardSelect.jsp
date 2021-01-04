@@ -34,14 +34,14 @@
 				<tr class="tr-fi">
 					<th><b>Files</b></th>
 				  	<c:forEach items="${vo.files}" var="file">
-					  	<p><a href="${board}FileDown?fnum=${file.fnum}">${file.oriName}</a></p>
+					  	<td class="td-file"><a href="${board}FileDown?fnum=${file.fnum}">${file.oriName}</a><td>
 				  	</c:forEach>
 				</tr>
 			</table>
 		  	
 		  	<div class="button">
-			  	<button class="btn" title="Update">Update</button>
-			  	<button class="btn btn-color" title="Delete">Delete</button>
+			  	<input type="button" class="btn" value="Update" id="update">
+	 		 	<input type="button" class="btn btn-color" value="Delete" title="${vo.num}" id="del">
 		  	</div>
 	 		
  		</div>
@@ -62,7 +62,7 @@
 
 
 <script type="text/javascript">
-/* 	$("#update").click(function() {
+	$("#update").click(function() {
 		location.href="./${board}Update?num=${vo.num}";
 	});
 
@@ -70,21 +70,8 @@
 		//var num = $("#num").html();
 		var num = $(this).attr("title");
 		location.href="./${board}Delete?num="+num;
-	}); */
-
-	$(".go").click(function(){
-		var board = '${board}';
-		var t = $(this).attr("title");
-
-		$("#frm").attr("action", board+t);
+	}); 
 		
-/*  		if(t=='Delete'){
-			$("#frm").attr("method", "post");
-		} */
-		
-		$("#frm").submit();
-		
-	});
 </script>
 
 </body>
