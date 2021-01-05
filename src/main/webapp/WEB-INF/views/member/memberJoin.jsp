@@ -32,7 +32,7 @@
              </div>
              
              <div class="form-group">
-                  <label for="pw">Password</label>
+                  <label for="pw">Confirm Password</label>
                   <form:input path="pw2" class="form-control" id="pw"/>
                <form:errors path="pw2" cssClass="error"></form:errors>
              </div>

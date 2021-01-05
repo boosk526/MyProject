@@ -6,12 +6,13 @@
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/board/boardUpdate.css" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- include summernote css/js -->
-	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 </head>
 <body>
 	<c:import url="../template/header.jsp"></c:import>
@@ -29,11 +30,11 @@
 			     		<input type="text" class="form-tw form-ww" id="writer" value="${vo.writer}" readonly="readonly" name="writer" required="required">
 				    </div>
 			  		<div>
-				    	<div class="write-contents">${vo.contents}</div>
+		    			<div id="contents">${vo.contents}</div>
 				    </div>
 				    <div class="write-file">
-						<label for="files">File</label>
-						<input type="file" class="file-control" name="files" value="${file.file}">
+						<label class="file-control" for="files">File</label>
+						<input type="file" class="file-control file-tt" name="files" value="${file.file}">
 						<input type="file" class="file-control" name="files" value="${file.file}">
 					</div>
 				</div>
@@ -56,12 +57,12 @@
 
 <script type="text/javascript">
 
-	$('.write-contents').summernote({
+	$('#contents').summernote({
 	    height: 300
 	});
-	
-	$('write-contents').summernote('code','${vo.contents}');
-	
+
+	$('#contents').summernote('code','${vo.contents}');
+
  	$("#exit").click(function() {
 		location.href="./${board}Select?num=${vo.num}";
 	});

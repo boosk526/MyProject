@@ -2,6 +2,7 @@ package com.pledis.svt.board.notice;
 
 import java.util.List;
 
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -64,7 +65,7 @@ public class NoticeController {
 	}
 
 	@PostMapping("noticeWrite")
-	public ModelAndView setInsert(@Validated BoardVO boardVO, BindingResult bindingResult, MultipartFile[] files)throws Exception{
+	public ModelAndView setInsert(@Valid BoardVO boardVO, BindingResult bindingResult, MultipartFile[] files)throws Exception{
 		ModelAndView mv = new ModelAndView();
 		System.out.println("------ Notice Write ------");
 		

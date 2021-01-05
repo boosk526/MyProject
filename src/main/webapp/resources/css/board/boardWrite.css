@@ -13,7 +13,7 @@
 	margin: 0 auto;
 }
 .form-write{
-	width: 80%;
+	width: 70%;
 	height: 72vh;
 	margin: 0 auto;
 	background-color: rgba(240, 246, 255, 0.3);
@@ -35,6 +35,10 @@
 }
 .file-control{
 	margin: 0 0 0 3%;
+}
+.write-con{
+	width: 100%;
+	border: none;
 }
 .submit-btn{
 	width: 80%;

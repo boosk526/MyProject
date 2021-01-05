@@ -7,12 +7,12 @@
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/board/boardWrite.css" rel="stylesheet" type="text/css">
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
 <!-- include summernote css/js -->
 	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
 	<c:import url="../template/header.jsp"></c:import>
@@ -35,7 +35,7 @@
 				    </div>
 				    
 			  		<div>
-					 	<div class="write-contents"></div>
+					 	<form:input path="contents" id="contents"/>
 				    </div>
 				    
 				    <div class="write-file">
@@ -61,7 +61,7 @@
 	
 <script type="text/javascript">
 
-	$('.write-contents').summernote({
+	$('#contents').summernote({
 	    height: 350
 	});
 	
