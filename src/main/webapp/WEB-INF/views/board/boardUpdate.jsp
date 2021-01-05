@@ -30,7 +30,7 @@
 			     		<input type="text" class="form-tw form-ww" id="writer" value="${vo.writer}" readonly="readonly" name="writer" required="required">
 				    </div>
 			  		<div>
-		    			<div id="contents">${vo.contents}</div>
+		    			<textarea class="form-control" rows="5" id="contents" name="contents">${vo.contents}</textarea>
 				    </div>
 				    <div class="write-file">
 						<label class="file-control" for="files">File</label>

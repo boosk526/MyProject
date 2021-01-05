@@ -7,6 +7,7 @@
 <c:import url="../template/link.jsp"></c:import>
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/board/boardWrite.css" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- include summernote css/js -->
 	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
@@ -39,8 +40,8 @@
 				    </div>
 				    
 				    <div class="write-file">
-						<label for="files">File</label>
-						<input type="file" class="file-control" name="files">
+						<label class="file-control" for="files">File</label>
+						<input type="file" class="file-control file-tt" name="files">
 						<input type="file" class="file-control" name="files">
 				    </div>
 		
@@ -62,7 +63,7 @@
 <script type="text/javascript">
 
 	$('#contents').summernote({
-	    height: 350
+	    height: 300
 	});
 	
 </script>
