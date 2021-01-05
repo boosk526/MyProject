@@ -1,0 +1,52 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0; text-decoration: none; font-family: 'Ubuntu', sans-serif, 'Noto Sans', sans-serif; list-style: none;}
+
+#container{
+   width: 100%;
+   height:92vh;
+   background: white;
+}
+form{
+   width: 100%;
+   height: 90vh;
+}
+.member-join{
+   width: 20%;
+   height: 60vh;
+   padding: 13vh 0 0 0;
+   margin: 0 auto;
+   text-align: center;
+}
+.join-tt{
+   font-size: 30px;
+   margin: 0 0 3vh 0;
+   color: #8aaad9;
+}
+label{
+   float: left;
+   font-size: 15px;
+}
+.form-control{
+   width: 100%;
+   height: 5vh;
+   margin: 0 0 1vh 0;
+   border: 1px solid #8aaad9;
+}
+.btn-join{
+   width: 100%;
+   height: 5vh;
+   background-color: #c7d6ed;
+   border: 1px solid #8aaad9;
+   font-size: 16px;
+   color: white;
+   margin: 2vh 0 0 0;
+}
+.footer-family-hover{
+   position: absolute;
+   width: 20%;
+     height: 128px;
+     top: 0;
+     margin: 76vh 0 0 40%;
+     background-color: #202020;
+     text-align: center;
+}

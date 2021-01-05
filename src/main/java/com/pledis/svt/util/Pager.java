@@ -1,6 +1,5 @@
 package com.pledis.svt.util;
 
-import org.springframework.data.domain.Page;
 
 import com.pledis.svt.board.notice.NoticeVO;
 
