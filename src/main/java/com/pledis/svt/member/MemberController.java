@@ -65,8 +65,11 @@ public class MemberController {
 	public ModelAndView setMemberJoin(@Valid MemberVO memberVO, BindingResult bindingResult, HttpSession session)throws Exception {
 		ModelAndView mv = new ModelAndView();
 		
+		int result = memberService.setInsert(memberVO);
+		
 		if(memberService.getMemberError(memberVO, bindingResult)) {
 			mv.setViewName("member/memberJoin");
+			mv.setViewName("redirect:../");
 			return mv;
 		}
 		

@@ -15,7 +15,7 @@
    <c:import url="../template/header.jsp"></c:import>
 
    <section id="container">
-		<form:form modelAttribute="memberVO" id="frm" action="./memberJoin" enctype="multipart/form-data">
+		<form:form modelAttribute="memberVO" enctype="multipart/form-data">
 			<div class="member-join">
 	            <h3 class="join-tt">회원가입</h3>
 	             <div class="form-group">

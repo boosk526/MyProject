@@ -17,7 +17,7 @@ public class FilePathGenerator {
 
         String path="classpath:/static/";
 
-        //resourceLoader.getResource(path);
+        resourceLoader.getResource(path);
 
         File file = new File(resourceLoader.getResource(path).getFile(), filePath);
 

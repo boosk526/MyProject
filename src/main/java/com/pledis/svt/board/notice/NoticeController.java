@@ -140,6 +140,8 @@ public class NoticeController {
 			ModelAndView mv = new ModelAndView();
 			fileVO = noticeService.getFile(fileVO);
 			
+			System.out.println(fileVO.getFileName());
+			
 			mv.addObject("fileVO", fileVO);
 			mv.addObject("filePath", filePath);
 //			mv.addObject("filePath", "upload/notice"); properties에 써 있기 때문에 이렇게 할 필요 X
