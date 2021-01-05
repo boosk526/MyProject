@@ -11,28 +11,13 @@
     </select>
     
 	<insert id="setInsert" parameterType="MemberVO">
-		insert into member(id, pw, name, age, email) 
-		values(#{id}, #{pw}, #{name}, #{age}, #{email})
+		insert into member(id, pw, name, age, email, role) 
+		values(#{id}, #{pw}, #{name}, #{age}, #{email}, 'member')
 	</insert>
 	
-	<insert id="setInsertFile" parameterType="MemberFileVO">
-		insert into memberFile(id, fileName, oriName) 
-		values(#{id}, #{fileName}, #{oriName})
-	</insert>
-	
-	<resultMap type="MemberVO" id="memberLoginResult">
-		<id column="id" property="id"/>
-		<result column="name" property="name"/>
-		<collection property="roles" javaType="List" ofType="MemberRoleVO">
-			<result column="role" property="role"/>
-		</collection>
-	</resultMap>
-	
-	<select id="getMemberLogin" resultMap="memberLoginResult" parameterType="MemberVO">
-		select M.id, M.name, MR.role
-		from member M inner join memberRole MR
-		on M.id = MR.id
-		where M.id=#{id} and M.pw=#{pw}
+	<select id="getMemberLogin" parameterType="MemberVO" resultType="MemberVO">
+		select id, name, role from member
+    	where id=#{id} and pw=#{pw}
 	</select>
 	
    

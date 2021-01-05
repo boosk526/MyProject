@@ -8,8 +8,6 @@
 		<typeAlias type="java.lang.Long" alias="Long"/>
 		
 		<typeAlias type="com.pledis.svt.member.MemberVO" alias="MemberVO"/>
-		<typeAlias type="com.pledis.svt.member.MemberFileVO" alias="MemberFileVO"/>
-		<typeAlias type="com.pledis.svt.member.MemberRoleVO" alias="MemberRoleVO"/>
 		
 		<typeAlias type="com.pledis.svt.board.BoardVO" alias="BoardVO"/>
 		<typeAlias type="com.pledis.svt.board.notice.NoticeVO" alias="NoticeVO"/>

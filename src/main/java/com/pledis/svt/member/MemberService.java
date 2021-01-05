@@ -18,10 +18,6 @@ public class MemberService {
 		return memberMapper.setInsert(memberVO);
 	}
 	
-	public int setInsertFile(MemberFileVO memberFileVO)throws Exception{
-		return memberMapper.setInsertFile(memberFileVO);
-	}
-	
 	public boolean getMemberError(MemberVO memberVO, BindingResult bindingResult)throws Exception{
 		// result : true -> 검증 위반(실패)
 		// result : false -> 검증 성공

@@ -25,7 +25,6 @@ public class MemberVO {
 	private long age;
 	@Email
 	private String email;
+	private String role;
 	
-	private List<MemberRoleVO> roles;
-
 }

@@ -23,9 +23,9 @@
 				<tr>
 					<th>Name :</th> <td>${member.name}</td>
 				</tr>
-				<c:forEach items="${member.roles}" var="memberRoleVO">
+				<c:forEach items="${member.role}">
 					<tr>
-						<th>Role :</th> <td>${memberRoleVO.role}</td>
+						<th>Role :</th> <td>${member.role}</td>
 					</tr>
 				</c:forEach>
 			</table>
