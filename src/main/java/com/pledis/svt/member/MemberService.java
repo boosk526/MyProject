@@ -14,6 +14,11 @@ public class MemberService {
 		return memberMapper.getMemberLogin(memberVO);
 	}
 	
+	public int setMemberDelete(MemberVO memberVO) throws Exception {
+		// TODO Auto-generated method stub
+		return memberMapper.setMemberDelete(memberVO);
+	}
+	
 	public int setInsert(MemberVO memberVO)throws Exception {
 		return memberMapper.setInsert(memberVO);
 	}
@@ -45,6 +50,5 @@ public class MemberService {
 		
 		return result;
 	}
-	
 	
 }

@@ -86,7 +86,6 @@ public class NoticeController {
 		mv.addObject("msg",message);
 		mv.addObject("path", "./noticeList");
 		
-		
 		return mv;
 	}
 	

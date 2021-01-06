@@ -48,6 +48,18 @@ td{
 	color: white;
 	font-size: 17px;
 }
+.member-delete{
+	width: 5%;
+	height: 3vh; 
+	margin: 3vh 0 0 55%;
+	background-color: #c66060;
+	line-height: 3vh;
+	text-align: center;
+}
+.member-delete > a > b{
+	color: white;
+	font-size: 14px;
+}
 .footer-family-hover{
    position: absolute;
    width: 20%;

@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.pledis.svt.board.BoardVO;
+
 @Controller
 @RequestMapping("/member/**")
 public class MemberController {
@@ -41,9 +43,15 @@ public class MemberController {
 	}
 	
 	@GetMapping("memberLogout")
-	public String getMemberLogout(HttpSession session)throws Exception {
+	public ModelAndView getMemberLogout(HttpSession session)throws Exception {
+		ModelAndView mv = new ModelAndView();
 		session.invalidate();
-		return "redirect:../";
+		
+		String message = "Logout";
+		mv.addObject("msg",message);
+		mv.addObject("path", "./memberLogin");
+		mv.setViewName("common/result");
+		return mv;
 	}
 	
 	
@@ -65,14 +73,26 @@ public class MemberController {
 	public ModelAndView setMemberJoin(@Valid MemberVO memberVO, BindingResult bindingResult, HttpSession session)throws Exception {
 		ModelAndView mv = new ModelAndView();
 		
-		int result = memberService.setInsert(memberVO);
-		
 		if(memberService.getMemberError(memberVO, bindingResult)) {
 			mv.setViewName("member/memberJoin");
-			mv.setViewName("redirect:../");
 			return mv;
 		}
 		
+		int result = memberService.setInsert(memberVO);
+
+		mv.setViewName("redirect:../");
+		return mv;
+	}
+	
+	@GetMapping("memberDelete")
+	public ModelAndView setMemberDelete(HttpSession session)throws Exception{
+		ModelAndView mv = new ModelAndView();
+		MemberVO memberVO =(MemberVO)session.getAttribute("member");
+		int result = memberService.setMemberDelete(memberVO);
+		
+		mv.setViewName("redirect:../");
+		session.invalidate();
+	      
 		return mv;
 	}
 	

@@ -46,28 +46,6 @@ public class NoticeService implements BoardService{
 		
 		int result = noticeMapper.setInsert(boardVO);
 		System.out.println("Num : "+ boardVO.getNum());
-		
-		// 1. HDD에 File 저장
-		// -- 저장할 폴더의 실제 경로명 필요
-		File file = filePathGenerator.getUseResourceLoader(this.filePath);
-		System.out.println(file.getAbsolutePath());
-		
-		for(MultipartFile multipartFile: files) {
-			if(multipartFile.getSize()==0) {
-				continue;
-			}
-			String fileName = fileManager.saveFileCopy(multipartFile, file);
-			System.out.println(fileName);
-			
-			FileVO fileVO = new FileVO();
-			fileVO.setFileName(fileName);
-			fileVO.setOriName(multipartFile.getOriginalFilename());
-			//fileVO.setNum(boardVO.getNum());
-			fileVO.setNum(2000);
-			
-			result = noticeMapper.setInsertFile(fileVO);
-		}
-		
 		return result;
 	}
 	

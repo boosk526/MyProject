@@ -32,6 +32,9 @@
 			<div class="member-logout">
 				<a href="${pageContext.request.contextPath}/member/memberLogout">Logout</a>
 			</div>
+			<div class="member-delete">
+				<a href="./memberDelete" class="btn-delete" title="${mem.id}"><b>회원탈퇴</b></a>
+			</div>
 		</div>
 		
         <c:import url="../template/menu.jsp"></c:import>  
