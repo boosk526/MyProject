@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -67,24 +66,22 @@ public class NoticeController {
 	@PostMapping("noticeWrite")
 	public ModelAndView setInsert(@Valid BoardVO boardVO, BindingResult bindingResult, MultipartFile[] files)throws Exception{
 		ModelAndView mv = new ModelAndView();
-		System.out.println("------ Notice Write ------");
+		/*
+		 * System.out.println("------ Notice Write ------");
+		 * 
+		 * if(bindingResult.hasErrors()) { System.out.println("------ 검증 실패 ------");
+		 * mv.setViewName("board/boardWrite"); return mv; }
+		 */
+		int result = noticeService.setInsert(boardVO, files);
 		
-		if(bindingResult.hasErrors()) {
-			System.out.println("------ 검증 실패 ------");
-			mv.setViewName("board/boardWrite");
-			return mv;
+		String message="Write Fail";
+		if(result>0) {
+			message ="Write Success";
 		}
 		
-		int result = noticeService.setInsert(boardVO,files);
-		
-		 String message = "Write Fail";
-	      if(result>0) {
-	         message = "Write Success";
-	      }
-	      
-		mv.setViewName("common/result");
-		mv.addObject("msg",message);
+		mv.addObject("msg", message);
 		mv.addObject("path", "./noticeList");
+		mv.setViewName("common/result");
 		
 		return mv;
 	}

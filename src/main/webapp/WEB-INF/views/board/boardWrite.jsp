@@ -36,7 +36,7 @@
 				    </div>
 				    
 			  		<div>
-					 	<form:input path="contents" id="contents"/>
+					 	<textarea rows="5" cols="30" id="contents" name="contents"></textarea>
 				    </div>
 				    
 				    <div class="write-file">
