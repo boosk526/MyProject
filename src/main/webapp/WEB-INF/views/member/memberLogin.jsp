@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -8,7 +9,7 @@
 <link href="../resources/css/common.css" rel="stylesheet" type="text/css">
 <link href="../resources/css/member/memberLogin.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
 </head>
 <body>
    <c:import url="../template/header.jsp"></c:import>
@@ -16,7 +17,7 @@
    <section id="container">
       <form action="./memberLogin" method="post">
          <div class="member-login">
-            <h3 class="login-tt">로그인</h3>
+            <h3 class="login-tt"><spring:message code="login" text="로그인"></spring:message></h3>
             <div class="form-group">
                 <label for="id"></label>
                 <input type="text" class="form-control" id="id" placeholder="아이디" name="id">

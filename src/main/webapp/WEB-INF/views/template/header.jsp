@@ -15,7 +15,7 @@
          <p><a href="${pageContext.request.contextPath}/" class="logo-home">tomorrow x +ogether</a></p>
       </div>
       <div class="lang">
-         <p class="sel-lang"><b>KOR</b></p>
+         <a class="sel-lang" href=""><b>KOR</b></a>
       </div>
    </header>
 
