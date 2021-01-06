@@ -1,6 +1,28 @@
 @charset "UTF-8";
 *{margin: 0; padding: 0; text-decoration: none; font-family: 'Ubuntu', sans-serif, 'Noto Sans', sans-serif; list-style: none;}
 
+.logo-home:hover{
+	text-decoration: none;
+	color: white;
+}
+.menu-ul{
+	margin: 22vh 0 0 0;
+}
+.menu-li{
+	padding: 2vh 0 2vh 0;
+}
+.menu-li > h3 > a:hover{
+	text-decoration: none;
+}
+.submenu-ul{
+	margin: 32vh 0 0 13%;
+}
+.submenu-li{
+	padding: 0 0 1vh 0;
+}
+.submenu-li > h3 > a:hover{
+	text-decoration: none;
+}
 #container{
 	width: 100%;
 	height:92vh;
@@ -72,7 +94,7 @@
 	width: 20%;
   	height: 128px;
   	top: 0;
-  	margin: 76vh 0 0 40%;
+  	margin: 75vh 0 0 40%;
   	background-color: #202020;
   	text-align: center;
 }
