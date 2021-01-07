@@ -13,5 +13,14 @@ public class TwitterController {
 		
 	}
 	
+	@GetMapping("twitterJoin")
+	public void twitterJoin()throws Exception{
+		
+	}
+	
+	@GetMapping("twitterLogin")
+	public void twitterLogin()throws Exception{
+		
+	}
 
 }

@@ -33,18 +33,18 @@
 }
 .main-right-text{
 	width: 100%;
-	height: 50vh;
+	height: 48vh;
 	font-size: 30px;
 }
 .text-in{
-	padding: 30vh 0 0 28%;
+	padding: 30vh 0 0 26%;
 }
 .main-right-button{
 	width: 100%;
 	height: 30vh;
 }
 .right-text{
-	padding: 0 0 0 28%;
+	padding: 0 0 0 26%;
 }
 .button-join{
 	width: 50%;
@@ -54,6 +54,12 @@
 	margin: 3vh auto;
 	text-align: center;
 	line-height: 5vh;
+	color: white;
+}
+.button-join:hover{
+	background-color: rgba(1,137,218,0.8)
+}
+.join-text{
 	color: white;
 }
 .button-login{
@@ -66,7 +72,31 @@
 	line-height: 5vh;
 	color: #0195ed;
 }
+.button-login:hover{
+	background-color: rgba(18,166,254,0.1)
+}
+.login-text{
+	color: #0195ed;
+}
 #footer{
 	width: 100%;
-	height: 7vh;
+	height: 6vh;
+}
+.footer-box{
+	width: 100%;
+	height: 6vh;
+	line-height: 6vh;
+	float: left;
+	font-size: 13px;
+}
+.footer-ul{
+	margin: 0 0 0 10%; 
+}
+.footer-li{
+	float: left;
+	margin: 0 0 0 1.5%;
+	color: gray;
+}
+.footer-li > a{
+	color: gray;
 }

@@ -39,19 +39,46 @@
 				<div class="right-text">
 					<b>오늘 트위터에 가입하세요.</b>
 				</div>
-				<div class="button-join">
-					가입하기
-				</div>
-				<div class="button-login">
-					로그인
-				</div>
+				<span class="join-text">
+					<div class="button-join">
+						가입하기
+					</div>
+				</span>
+				<a class="login-text" href="${pageContext.request.contextPath}/twitter/twitterLogin">
+					<div class="button-login">
+						로그인
+					</div>
+				</a>
 			</div>
 		</div>
+		<c:import url="./twitterJoin.jsp"></c:import>  
 	</section>
 	
 	<footer id="footer">
-		
+		<div class="footer-box">
+			<ul class="footer-ul">
+				<li class="footer-li"><a href="">소개</a></li>
+				<li class="footer-li"><a href="">고객센터</a></li>
+				<li class="footer-li"><a href="">이용약관</a></li>
+				<li class="footer-li"><a href="">개인정보 처리방침</a></li>
+				<li class="footer-li"><a href="">쿠키 정책</a></li>
+				<li class="footer-li"><a href="">광고 정보</a></li>
+				<li class="footer-li"><a href="">블로그</a></li>
+				<li class="footer-li"><a href="">상태</a></li>
+				<li class="footer-li"><a href="">채용</a></li>
+				<li class="footer-li"><a href="">브랜드 리소스</a></li>
+				<li class="footer-li"><a href="">광고</a></li>
+				<li class="footer-li"><a href="">마케팅</a></li>
+				<li class="footer-li"><a href="">비즈니스용 트위터</a></li>
+				<li class="footer-li"><a href="">개발자</a></li>
+				<li class="footer-li"><a href="">디렉터리</a></li>
+				<li class="footer-li"><a href="">설정</a></li>
+				<li class="footer-li">© 2021 Twitter, Inc.</li>
+			</ul>
+		</div>
 	</footer>
+	
+	<script src="../resources/js/twitter.js"> </script>
 	
 </body>
 </html>
