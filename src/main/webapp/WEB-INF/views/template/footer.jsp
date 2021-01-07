@@ -15,7 +15,7 @@
     
    <footer id="footer">
 		<div class="footer-logo">
-			<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/twitter-logo.png"></a>
+			<a href="${pageContext.request.contextPath}/twitter/twitterMain"><img alt="" src="${pageContext.request.contextPath}/resources/images/twitter-logo.png"></a>
          	<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/insta-logo.png"></a>
         	<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/fb-logo.png"></a>
         	<a href="#"><img alt="" src="${pageContext.request.contextPath}/resources/images/yt-logo.png"></a>
