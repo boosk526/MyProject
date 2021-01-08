@@ -4,24 +4,24 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-    <mapper namespace="com.pledis.svt.member.MemberMapper">
+    <mapper namespace="com.pledis.svt.twitterMember.TwitterMemberMapper">
     
-    <select id="getMemberId" parameterType="MemberVO" resultType="MemberVO">
-    	select id from member where id=#{id}
+    <select id="getMemberId" parameterType="TwitterMemberVO" resultType="TwitterMemberVO">
+    	select id from twitterMember where id=#{id}
     </select>
     
-	<insert id="setInsert" parameterType="MemberVO">
-		insert into member(id, pw, name, age, email, role) 
-		values(#{id}, #{pw}, #{name}, #{age}, #{email}, 'member')
+	<insert id="setInsert" parameterType="TwitterMemberVO">
+		insert into twitterMember(id, pw, name, phone, birth) 
+		values(#{id}, #{pw}, #{name}, #{phone}, #{birth})
 	</insert>
 	
-	<select id="getMemberLogin" parameterType="MemberVO" resultType="MemberVO">
-		select id, name, role from member
+	<select id="getMemberLogin" parameterType="TwitterMemberVO" resultType="TwitterMemberVO">
+		select id, name from twitterMember
     	where id=#{id} and pw=#{pw}
 	</select>
 	
-	<delete id="setMemberDelete" parameterType="MemberVO">
-    	delete member from member where id=#{id}
+	<delete id="setMemberDelete" parameterType="TwitterMemberVO">
+    	delete twitterMember from twitterMember where id=#{id}
 	</delete>
    
     </mapper>

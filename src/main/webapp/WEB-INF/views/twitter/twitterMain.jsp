@@ -32,6 +32,9 @@
 		<div class="main-right">
 			<div class="main-right-text">
 				<div class="text-in">
+					<div>
+						<img alt="" src="${pageContext.request.contextPath}/resources/images/joinLogo.png" width="35px">	
+					</div>
 					<b>지금 전 세계에서 무슨 일이<br>일어나고 있는지 알아보세요</b>
 				</div>
 			</div>
@@ -44,14 +47,14 @@
 						가입하기
 					</div>
 				</span>
-				<a class="login-text" href="${pageContext.request.contextPath}/twitter/twitterLogin">
+				<a class="login-text" href="${pageContext.request.contextPath}/twitterMember/twitterLogin">
 					<div class="button-login">
 						로그인
 					</div>
 				</a>
 			</div>
 		</div>
-		<c:import url="./twitterJoin.jsp"></c:import>  
+		<c:import url="../twitterMember/twitterJoin.jsp"></c:import>  
 	</section>
 	
 	<footer id="footer">
