@@ -16,6 +16,8 @@
 		
 		<typeAlias type="com.pledis.svt.twitterMember.TwitterMemberVO" alias="TwitterMemberVO"/>
 		
+		<typeAlias type="com.pledis.svt.twitter.TwitterBoardVO" alias="TwitterBoardVO"/>
+		
 		<typeAlias type="com.pledis.svt.util.Pager" alias="Pager"/>
 		
 	</typeAliases>

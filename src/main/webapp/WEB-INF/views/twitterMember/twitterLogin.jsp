@@ -22,14 +22,10 @@
 				</div>
 				<div class="twitter-login-form">
 					<div class="join-input">
-						<input class="input-css" type="text" placeholder="Id">
-						<input class="input-css" type="text" placeholder="Password">
+						<input class="input-css" type="text" placeholder="Id" id="id" name="id">
+						<input class="input-css" type="text" placeholder="Password" id="pw" name="pw">
 					</div>
-					<a href="">
-						<div class="login-button">
-							로그인
-						</div>
-					</a>
+					<button type="submit" class="login-button">로그인</button>
 				</div>
 			</form>
 		</section>

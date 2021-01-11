@@ -15,7 +15,6 @@ public class TwitterMemberVO {
 	private String id;
 	@Length(min = 4 , max= 16)
 	private String pw;
-	@Size(min = 2)
 	private String name;
 	@Length(min = 10 , max= 11)
 	private long phone;

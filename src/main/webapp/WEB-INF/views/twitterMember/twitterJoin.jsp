@@ -35,11 +35,7 @@
 				<div class="join-input">
 					<input class="input-css" type="text" placeholder="Birth">
 				</div>
-				<a href="">
-					<div class="join-button">
-						가입
-					</div>
-				</a>
+				<button type="submit" class="join-button" id="join">가입</button>
 				<a href="http://localhost/twitter/twitterMain">
 					<div class="exit-button">
 						취소

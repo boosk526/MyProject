@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pledis.svt.twitter.TwitterBoardVO">
+
+	<sql id="getSearch">
+		<choose>
+			<when test="kind == 'id'">
+				id
+			</when>
+			<otherwise>
+				contents
+			</otherwise>
+		</choose>
+		like concat('%', #{search},'%') and num>0
+	</sql>
+
+	<select id="getList" parameterType="Pager" resultType="TwitterBoardVO">
+		select * from twitter where
+		<include refid="getSearch"></include>
+		order by num desc limit #{startRow}, #{perPage}
+	</select>
+	
+   	<select id="getCount" resultType="Long" parameterType="Pager">
+		select count(num) from twitter where
+		<include refid="getSearch"></include>
+		
+	</select>
+
+	<insert id="setInsert" parameterType="TwitterBoardVO" useGeneratedKeys="true" keyProperty="num">
+		insert into twitter(num, contents, regDate)
+		values(#{num}, #{contents}, sysdate())
+	</insert>
+	
+	<insert id="setInsertFile" parameterType="FileVO">
+		insert into twitterFiles(num, fileName, oriName) values(#{num}, #{fileName}, #{oriName})
+	</insert>
+	
+   	<delete id="setDelete" parameterType="TwitterBoardVO">
+     	delete from twitter where num= #{num}
+  	</delete>
+   
+   	<select id="getOne" parameterType="TwitterBoardVO" resultMap="getOneResult">
+    	select T.*, TF.*
+		from twitterTN left join twitterFiles TF
+		on T.num = TF.num
+		where T.num=#{num}
+   	</select>
+   	
+   	<resultMap type="TwitterBoardVO" id="getOneResult">
+   		<id column="num" property="num"/>
+		<result column="contents" property="contents"/>
+		<result column="regDate" property="regDate"/>
+		<collection property="files" ofType="FileVO" javaType="java.util.List">
+			<id column="fnum" property="fnum"/>
+			<result column="fileName" property="fileName"/>
+			<result column="oriName" property="oriName"/>
+		</collection>
+   	</resultMap>
+   	
+   	<select id="getFile" parameterType="FileVO" resultType="FileVO">
+   		select * from twitterFiles where fnum=#{fnum}
+   	</select>
+
+</mapper>

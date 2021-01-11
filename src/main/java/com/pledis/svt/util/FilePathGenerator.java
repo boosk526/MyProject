@@ -16,7 +16,7 @@ public class FilePathGenerator {
 	//1. ResourceLoader 사용
 	public File getUseResourceLoader(String filePath)throws Exception{
 
-        String path="classpath:/static";
+        String path="classpath:/static/";
 
         resourceLoader.getResource(path);
 

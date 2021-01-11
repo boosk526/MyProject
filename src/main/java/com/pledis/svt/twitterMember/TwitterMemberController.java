@@ -32,7 +32,7 @@ public class TwitterMemberController {
 		
 		if(twitterMemberVO != null) {
 			session.setAttribute("twitterMember", twitterMemberVO);
-			mv.setViewName("redirect:../");
+			mv.setViewName("twitter/twitterHome");
 		}else {
 			String message = "Login Fail";
 			mv.addObject("msg", message);
@@ -74,12 +74,14 @@ public class TwitterMemberController {
 		ModelAndView mv = new ModelAndView();
 		
 		if(twitterMemberService.getMemberError(twitterMemberVO, bindingResult)) {
+			mv.addObject("twitterMemberVO", twitterMemberVO);
 			mv.setViewName("twitterMember/twitterJoin");
 			return mv;
 		}
 		
 		int result = twitterMemberService.setInsert(twitterMemberVO);
-
+		
+		mv.addObject("twitterMemberVO", twitterMemberVO);
 		mv.setViewName("redirect:../");
 		return mv;
 	}

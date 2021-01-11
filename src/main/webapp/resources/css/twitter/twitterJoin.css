@@ -43,9 +43,10 @@
 	border-radius: 20px;
 	background-color: #12a6fe;
 	text-align: center;
-	margin: 3vh auto 0;
+	margin: 3vh 10% 0;
 	color: white;
 	font-size: 20px;
+	border: none;
 }
 .exit-button{
 	width: 80%;
