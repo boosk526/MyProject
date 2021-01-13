@@ -68,17 +68,19 @@
 			<c:import url="./twitterWrite.jsp"></c:import>  
 		</section>
 	
-	<script>
-		$(".twitter-center").scrollTop($(".twitter-center")[0].scrollHeight);
+<script>
+	$(".twitter-center").scrollTop($(".twitter-center")[0].scrollHeight);
 
-		$('.modal').hide();
-		$('#write-btn').click(function(){
-			$(".modal").show();
-		});
-		function close_pop(flag) {
-            $('.modal').hide();
-       };
-	</script>
+
+    $('.modal').hide();
+	$('#write-btn').click(function(){
+		$(".modal").show();
+	});
+	function close_pop(flag) {
+        $('.modal').hide();
+    };
+
+</script>
 
 </body>
 </html>
