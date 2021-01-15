@@ -31,10 +31,15 @@
 			</div>
 			<div id ="twitterHome" class="twitter-center">
 				<c:forEach items="${list}" var="vo">
-		  			<tr>
-		  				<td>${vo.num}</td>
-		  				<td><a class="board-title" href="${board}Select?num=${vo.num}">${vo.contents}</a></td>
-		  				<td>${vo.regDate}</td>
+		  			<div>
+		  				${vo.num}
+		  			</div>
+		  			<div>
+		  				<a class="board-title" href="${board}Select?num=${vo.num}">${vo.contents}</a>
+		  			</div>
+		  			<div>
+		  				${vo.regDate}
+		  			</div>
 		  			</tr>
 		  		</c:forEach>
 			</div>
@@ -65,22 +70,9 @@
 				</div>
 			</div>
 			
-			<c:import url="./twitterWrite.jsp"></c:import>  
 		</section>
 	
-<script>
-	$(".twitter-center").scrollTop($(".twitter-center")[0].scrollHeight);
-
-
-    $('.modal').hide();
-	$('#write-btn').click(function(){
-		$(".modal").show();
-	});
-	function close_pop(flag) {
-        $('.modal').hide();
-    };
-
-</script>
+	<script src="../resources/js/twitter.js"> </script>
 
 </body>
 </html>

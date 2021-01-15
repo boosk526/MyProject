@@ -35,8 +35,8 @@ public class TwitterController {
 	
 	@GetMapping("twitterHome")
 	public String getList(Pager pager, Model model) throws Exception{
-		/* List<TwitterBoardVO> ar = twitterBoardService.getList(pager); */
-		/* model.addAttribute("list", ar); */
+		List<TwitterBoardVO> ar = twitterBoardService.getList(pager); 
+		model.addAttribute("list", ar); 
 		model.addAttribute("pager", pager);
 		
 		return "twitter/twitterHome";

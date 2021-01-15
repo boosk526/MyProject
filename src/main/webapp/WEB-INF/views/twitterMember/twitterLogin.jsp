@@ -25,6 +25,7 @@
 						<input class="input-css" type="text" placeholder="Id" id="id" name="id">
 						<input class="input-css" type="text" placeholder="Password" id="pw" name="pw">
 					</div>
+					
 					<button type="submit" class="login-button">로그인</button>
 				</div>
 			</form>

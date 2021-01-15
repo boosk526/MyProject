@@ -1,9 +1,21 @@
-
-	$('.tw-join-box').hide();
-	$('.join-text').click(function(){
-		$(this).toggleClass('active');
+	
+	$(".button-join").click(function() {
+			location.href="../twitterMember/twitterJoin";
 	});
-	$('.join-text').click(function(){
-		$('.tw-join-box').fadeToggle(500);
+	
+	$(".exit-button").click(function() {
+			location.href="../twitter/twitterMain";
 	});
-   
+	
+	$(".button-login").click(function() {
+			location.href="../twitterMember/twitterLogin";
+	});
+	
+	$("#write-btn").click(function() {
+			location.href="./twitterWrite";
+	});
+	
+	$(".twitter-center").scrollTop(
+		$(".twitter-center")[0].scrollHeight
+	);
+	

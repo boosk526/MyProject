@@ -47,14 +47,11 @@
 						가입하기
 					</div>
 				</span>
-				<a class="login-text" href="${pageContext.request.contextPath}/twitterMember/twitterLogin">
-					<div class="button-login">
-						로그인
-					</div>
-				</a>
+				<div class="button-login">
+					로그인
+				</div>
 			</div>
 		</div>
-		<c:import url="../twitterMember/twitterJoin.jsp"></c:import>  
 	</section>
 	
 	<footer id="footer">

@@ -13,6 +13,8 @@
 <body>
 	
 		<section id="container">
+			<c:import url="./twitterHome.jsp"></c:import>  
+		
 			<form:form modelAttribute="twitterBoardVO" acenctype="multipart/form-data">
 				<div class="modal">
 					<div class="modal-con">

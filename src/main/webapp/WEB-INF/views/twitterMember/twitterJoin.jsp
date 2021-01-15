@@ -8,10 +8,14 @@
 <meta charset="UTF-8">
 <c:import url="../template/twitterLink.jsp"></c:import>
 <link href="../resources/css/twitter/twitterJoin.css" rel="stylesheet" type="text/css">
+<link href="../resources/css/twitter/twitterMain.css" rel="stylesheet" type="text/css">
 <title>Twitter</title>
 </head>
 <body>
 	
+	<section>
+		<c:import url="../twitter/twitterMain.jsp"></c:import>  
+		
 		<div class="tw-join-box">
 			<div class="tw-join">
 				<div class="join-logo">
@@ -36,13 +40,14 @@
 					<input class="input-css" type="text" placeholder="Birth">
 				</div>
 				<button type="submit" class="join-button" id="join">가입</button>
-				<a href="http://localhost/twitter/twitterMain">
-					<div class="exit-button">
-						취소
-					</div>
-				</a>
+				<div class="exit-button">
+					취소
+				</div>
 			</div>
 		</div>
+	</section>
+	
+	<script src="../resources/js/twitter.js"> </script>
 	
 </body>
 </html>
