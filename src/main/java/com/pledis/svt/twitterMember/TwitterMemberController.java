@@ -32,8 +32,6 @@ public class TwitterMemberController {
 		
 		if(twitterMemberVO != null) {
 			session.setAttribute("twitterMember", twitterMemberVO);
-			String message = "Login Success";
-			mv.addObject("msg", message);
 			mv.setViewName("twitter/twitterHome");
 		}else {
 			String message = "Login Fail";

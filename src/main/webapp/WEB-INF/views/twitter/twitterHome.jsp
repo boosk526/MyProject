@@ -31,16 +31,14 @@
 			</div>
 			<div id ="twitterHome" class="twitter-center">
 				<c:forEach items="${list}" var="vo">
-		  			<div>
-		  				${vo.num}
-		  			</div>
-		  			<div>
-		  				<a class="board-title" href="${board}Select?num=${vo.num}">${vo.contents}</a>
-		  			</div>
-		  			<div>
-		  				${vo.regDate}
-		  			</div>
-		  			</tr>
+					<div class="home-box">
+			  			<div class="home-con">
+			  				<a class="board-title" href="${board}Select?num=${vo.num}">${vo.contents}</a>
+			  			</div>
+			  			<div class="home-date">
+			  				${vo.regDate}
+			  			</div>
+			  		</div>
 		  		</c:forEach>
 			</div>
 			<div class="twitter-right">
